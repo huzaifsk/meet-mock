@@ -12,10 +12,6 @@ A polished UI clone of Google Meet built with **React** and **Tailwind CSS**, sh
 - 🖥️ Fully responsive layout — optimized for desktop & mobile
 - 🐱 GitHub icon linking to the repository
 
-## 🚀 Live Demo
-
-> Coming soon or run locally with the instructions below.
-
 ## 📸 Preview
 
 ![UI Screenshot](/public/preview.png) <!-- You can replace this with an actual screenshot -->
