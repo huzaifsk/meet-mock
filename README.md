@@ -18,7 +18,7 @@ A polished UI clone of Google Meet built with **React** and **Tailwind CSS**, sh
 
 ## 📸 Preview
 
-![UI Screenshot](./preview.png) <!-- You can replace this with an actual screenshot -->
+![UI Screenshot](/public/preview.png) <!-- You can replace this with an actual screenshot -->
 
 ## 🛠️ Getting Started
 
