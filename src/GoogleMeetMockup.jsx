@@ -148,7 +148,7 @@ export default function GoogleMeetMockup() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 overflow-y-auto flex-grow pr-1">
             {participants.map((name, index) => {
               const gender = index % 2 === 0 ? "women" : "men";
-              const imageId = (index % 50) + 1;
+              const imageId = (index % 50) + 2;
               return (
                 <div
                   key={index}
