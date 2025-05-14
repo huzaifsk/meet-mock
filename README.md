@@ -30,3 +30,19 @@ git clone https://github.com/huzaifsk/meet-mock.git
 cd meet-mock
 npm install
 ```
+## 🤝 Contributing
+
+We welcome contributions! Please read our [CONTRIBUTING.md](CONTRIBUTING.md) for details on how to submit bug reports, suggest features, and contribute code.
+
+## 📜 License
+
+This project is licensed under the [MIT License](LICENSE).
+
+## 🙏 Acknowledgements
+
+- This project was inspired by the user interface of Google Meet.
+- Placeholder user images are provided by [randomuser.me](https://randomuser.me/).
+
+## 📧 Contact
+
+huzaifsk12@gmail.com
