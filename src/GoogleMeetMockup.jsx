@@ -33,8 +33,9 @@ import {
   MoreVerticalIcon,
   UserCircle2Icon,
   AlertTriangleIcon,
-  SmileIcon, // For Emoji Reactions
-  LayoutGridIcon, // For Activities
+  SmileIcon,
+  LayoutGridIcon,
+  GithubIcon,
 } from "lucide-react";
 
 export default function GoogleMeetMockup() {
@@ -98,11 +99,11 @@ export default function GoogleMeetMockup() {
   ];
 
   // Button styling classes
-  const baseControlButtonClass = "p-3 text-white transition-all";
+  const baseControlButtonClass = "p-3 text-white transition-all cursor-pointer";
   const onStateButtonClass = `bg-[#3c4043] hover:bg-[#4a4d50] ${baseControlButtonClass}`;
   const offStateButtonClass = `bg-[#5f6368] hover:bg-[#6f7378] ${baseControlButtonClass}`; // Darker grey for off state
   const endCallButtonClass = `bg-[#ea4335] hover:bg-[#d93025] ${baseControlButtonClass}`;
-  const utilityButtonClass = `bg-[#3c4043] hover:bg-[#4a4d50] p-2.5 text-white transition-all`;
+  const utilityButtonClass = `bg-[#3c4043] hover:bg-[#4a4d50] p-2.5 text-white transition-all cursor-pointer`;
 
   return (
     <div className="h-screen bg-[#202124] text-white flex flex-col items-center font-sans select-none">
@@ -256,6 +257,16 @@ export default function GoogleMeetMockup() {
             <Button className={utilityButtonClass} aria-label="Activities">
               <LayoutGridIcon size={20} />
             </Button>
+            <a
+              href="https://github.com/huzaifsk/meet-mock"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="View source on GitHub"
+            >
+              <Button className={utilityButtonClass}>
+                <GithubIcon size={20} />
+              </Button>
+            </a>
           </div>
         </div>
       </div>
