@@ -40,6 +40,7 @@ export default function GoogleMeetMockup() {
   const [cameraOn, setCameraOn] = useState(true);
   const [micOn, setMicOn] = useState(true);
   const [cameraError, setCameraError] = useState(null);
+  const [currentTime, setCurrentTime] = useState(new Date());
   const videoRef = useRef(null);
 
   const userName = "User"; // Main user's name
@@ -78,6 +79,13 @@ export default function GoogleMeetMockup() {
       }
     };
   }, [cameraOn]);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentTime(new Date());
+    }, 1000); // update every second
+    return () => clearInterval(timer);
+  }, []);
 
   const participants = [
     "Jenelia",
@@ -194,7 +202,11 @@ export default function GoogleMeetMockup() {
         <div className="flex flex-wrap justify-center items-center md:justify-between">
           {/* Left: Time and Meeting Code - Hidden on mobile */}
           <div className="text-sm text-gray-300 hidden md:block min-w-[150px]">
-            10:34 AM | zfw-fayf-eeo
+            {currentTime.toLocaleTimeString([], {
+              hour: "2-digit",
+              minute: "2-digit",
+            })}{" "}
+            | zfw-fayf-eeo
           </div>
 
           {/* Center: Main Controls */}
